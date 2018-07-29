@@ -17,10 +17,10 @@
 
 ## Introducción
 
-#### `Qué es un Layout?`:
+### `Qué es un Layout?`:
   Son esos recuadros principales donde se encierra o se envuelve todo el contenido y componentes de nuestro sitio web.
 
-### `Grid Container`
+#### `Grid Container`
   Elemento padre principal que va a tener puesto un nuevo tipo de display llamado `grid` , el cual nos va a permitir que le podamos poner otras propiedades para manipular nuestro Layout. Los hijos directos de dicho contenedor serán `Grid Items`.
   > Ejemplo :
 ```html
@@ -34,21 +34,21 @@
     </div>
 </div>
 ```
-### `Grid Line`
+#### `Grid Line`
   Líneas divisorias horizontales y verticales.
   Divisiones invisibles dentro de nuestro web site.
   También serán las que van a contornear nuestro grid.
 
-### `Grid Track`
+#### `Grid Track`
   Es el espacio entre dos lineas adyacentes o mas bien conocido como filas y columnas.
 
-### `Grid Cell`
+#### `Grid Cell`
   Espacio entre dos filas adyacentes y dos columnas adyacentes.
 
-### `Grid Area`
+#### `Grid Area`
   Espacio que rodeado por 4 grid lines (Cabe destacar que se puede ampliar a N cantidades)
 
-### `Soporte`
+#### `Soporte`
   CSS Grid Layout es soportada en un gran
   porcentaje puedes mirar el siguiente
   enlace [css-grid-support](https://caniuse.com/#feat=css-grid)
@@ -61,7 +61,7 @@
 ## Ejemplo Básico
 
 
-### `Columas`
+#### `Columas`
 1. Primero se crea la estructura básica del html `index.html`
 
 ```html
@@ -112,7 +112,7 @@ Para definir las columnas se realiza de la siguiente manera:
     grid-template-columns: valores;
 ```
 
-### `Filas`
+#### `Filas`
   Para definir filas tenemos que aumentar
   el siguiente codigo en nuestro `style.css`
 
