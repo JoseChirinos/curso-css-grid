@@ -13,7 +13,7 @@
 
 ## Tabla de Contenido
   - [Introducción](#introducción)
-  - [Ejemplo Básico](#ejemplo-basico)
+  - [Primeros Pasos](#primeros-pasos)
 
 ## Introducción
 
@@ -58,10 +58,10 @@
   <small><a href="#tabla-de-contenido">Contenido 🡡</a></small>
 </div>
 
-## Ejemplo Básico
+## Primeros Pasos
 
 
-#### `Columas`
+#### `Columnas`
 1. Primero se crea la estructura básica del html `index.html`
 
 ```html
@@ -132,7 +132,7 @@ Tambien filas y columnas a la vez:
 ```css
     grid-template: filas / columnas;
 ```
-- Ejemplo:
+> Ejemplo:
 ```css
   .container{
     display: grid;
