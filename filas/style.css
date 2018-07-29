@@ -1,0 +1,18 @@
+/*** filas ***/
+body {
+  font-family: arial;
+}
+.container{
+  display: grid;
+  /*
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 300px 100px 100px;
+  */
+  grid-template: 300px 100px 100px / 25% 50% 25%;
+
+}
+.item{
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}

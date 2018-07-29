@@ -1,0 +1,13 @@
+/*** columnas ***/
+body {
+  font-family: arial;
+}
+.container{
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.item{
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}
