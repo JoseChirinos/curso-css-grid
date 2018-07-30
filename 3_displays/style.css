@@ -1,0 +1,23 @@
+/*** displays ***/
+body {
+  font-family: arial;
+}
+.container{
+  display: grid;
+  grid-template: 300px 100px 100px / 50% 200px 100px;
+}
+.item{
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}
+.item:nth-of-type(4){
+  background: blue;
+  overflow: auto;
+  display: grid;
+  grid-template: 50px 50px 50px / 200px 200px 200px;
+}
+.item .item{
+  background: yellow;
+  overflow: hidden;
+}

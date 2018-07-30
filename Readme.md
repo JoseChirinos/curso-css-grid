@@ -1,6 +1,6 @@
 # Curso CSS Grid Layout 
 
-## Curso Oficial de Grid Css Layout 2018
+## Curso Oficial de Platzi, 2018
 
 > Instalar Browser-Sync para cambios en tiempo real
 ```sh
@@ -14,6 +14,9 @@
 ## Tabla de Contenido
   - [Introducción](#introducción)
   - [Primeros Pasos](#primeros-pasos)
+  - [Displays](#displays)
+  - [Espaciado entre columnas](#espaciado-entre-columnas)
+  - [Repetidores, unidades de medida y funciones](#Repetidores,-unidades-de-medida-y-funciones)
 
 ## Introducción
 
@@ -155,3 +158,72 @@ Tambien filas y columnas a la vez:
 <div align="right">
   <small><a href="#tabla-de-contenido">Contenido 🡡</a></small>
 </div>
+
+## `Displays`
+  Entre los displays disponibles de Grid Css Layout
+  tenemos:
+
+#### `subgrid`
+
+  Este display es para heredar la configuración del grid padre
+  (cuando se esten anidando los grids)
+
+  ```css
+    display: subgrid; // No disponible aun
+  ```
+
+#### `inline-grid`
+
+  Este display es para mostrar el grid en una sola linea
+
+  ```css
+    display: inline-grid; // No disponible aun
+  ```
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">Contenido 🡡</a></small>
+</div>
+
+## `Espaciado entre columnas`
+  Para el espaciado entre columnas tenemos las
+  siguientes propiedades:
+
+  ```css
+    grid-column-gap: value; // Espaciado entre columnas
+  ```
+
+  ```css
+    grid-row-gap: value; // Espaciado entre filas
+  ```
+
+  ```css
+    grid-gap: rows columns; // Espaciado filas y columnas
+  ```
+
+#### `(*)Importante Actualización Chrome 66`
+
+  Se retira la inicial `grid-`
+  
+  ```css
+    column-gap: value; // Espaciado entre columnas
+  ```
+
+  ```css
+    row-gap: value; // Espaciado entre filas
+  ```
+
+  ```css
+    gap: rows columns; // Espaciado filas y columnas
+  ```
+
+  <div align="right">
+    <small><a href="#tabla-de-contenido">Contenido 🡡</a></small>
+  </div>
+
+## `Repetidores, unidades de medida y funciones`
+
+  Dentro de las unidades de medida tenemos las siguientes:
+
+#### `Fracciones`
+  `(fr)` distribuye el espacio en formas iguales, este
+  solo se puede utilizar dentro de un `display:grid`
