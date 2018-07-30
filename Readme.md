@@ -1,12 +1,12 @@
 # Curso CSS Grid Layout 
 
-## Curso Oficial de Platzi, 2018
+### Para ejecutar el proyecto en modo dev, instalar la siguiente dependencia:
 
-> Instalar Browser-Sync para cambios en tiempo real
+1. Browser-Sync para cambios en tiempo real
 ```sh
     npm install -g browser-sync
 ```
-> Para ejecutar el proyecto modo desarrollo
+2. Ejecutar el proyecto modo desarrollo
 ```sh
     npm start
 ```
@@ -17,14 +17,16 @@
   - [Displays](#displays)
   - [Espaciado entre columnas](#espaciado-entre-columnas)
   - [Repetidores, unidades de medida y funciones](#Repetidores,-unidades-de-medida-y-funciones)
-
+  - [Areas de Contenido](#areas-de-contenido)
 ## Introducción
 
-### `Qué es un Layout?`:
-  Son esos recuadros principales donde se encierra o se envuelve todo el contenido y componentes de nuestro sitio web.
+En esta sección explicaremos las conceptos más importantes:
 
-#### `Grid Container`
-  Elemento padre principal que va a tener puesto un nuevo tipo de display llamado `grid` , el cual nos va a permitir que le podamos poner otras propiedades para manipular nuestro Layout. Los hijos directos de dicho contenedor serán `Grid Items`.
+#### `Layout:`
+  Son los recuadros principales donde se encierra o se envuelve todo el contenido y componentes de nuestro sitio web.
+
+#### `Grid Container:`
+  Es el elemento padre principal que va a tener puesto un nuevo tipo de display llamado `grid` , el cual nos va a permitir que le podamos poner otras propiedades para manipular nuestro Layout. Los hijos directos de dicho contenedor serán `Grid Items`.
   > Ejemplo :
 ```html
   <div class="container">
@@ -37,21 +39,21 @@
     </div>
 </div>
 ```
-#### `Grid Line`
-  Líneas divisorias horizontales y verticales.
+#### `Grid Line:`
+  Son líneas divisorias horizontales y verticales.
   Divisiones invisibles dentro de nuestro web site.
   También serán las que van a contornear nuestro grid.
 
-#### `Grid Track`
+#### `Grid Track:`
   Es el espacio entre dos lineas adyacentes o mas bien conocido como filas y columnas.
 
-#### `Grid Cell`
-  Espacio entre dos filas adyacentes y dos columnas adyacentes.
+#### `Grid Cell:`
+  Es el espacio entre dos filas adyacentes y dos columnas adyacentes.
 
-#### `Grid Area`
-  Espacio que rodeado por 4 grid lines (Cabe destacar que se puede ampliar a N cantidades)
+#### `Grid Area:`
+  Es el espacio que es rodeado por 4 grid lines (Cabe destacar que se puede ampliar a N cantidades)
 
-#### `Soporte`
+#### *Sobre su soporte en los navegadores:*
   CSS Grid Layout es soportada en un gran
   porcentaje puedes mirar el siguiente
   enlace [css-grid-support](https://caniuse.com/#feat=css-grid)
@@ -64,7 +66,7 @@
 ## Primeros Pasos
 
 
-#### `Columnas`
+#### `Columnas:`
 1. Primero se crea la estructura básica del html `index.html`
 
 ```html
@@ -115,7 +117,7 @@ Para definir las columnas se realiza de la siguiente manera:
     grid-template-columns: valores;
 ```
 
-#### `Filas`
+#### `Filas:`
   Para definir filas tenemos que aumentar
   el siguiente codigo en nuestro `style.css`
 
@@ -144,11 +146,11 @@ Tambien filas y columnas a la vez:
 ```
 `(*) Tomar muy en cuenta los siguientes conceptos:`
 
-#### `Grid Explicito`
+#### `Grid Explicito:`
   (Explicit Grid) es cuando nosotros definimos
   el número de filas o columnas.
 
-#### `Grid Implicito`
+#### `Grid Implicito:`
   (Implicit Grid) es cuando filas o columnas
   que no definimos pero son parte de nuestro grid.
 
@@ -159,11 +161,11 @@ Tambien filas y columnas a la vez:
   <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
 
-## `Displays`
+## Displays
   Entre los displays disponibles de Grid Css Layout
   tenemos:
 
-#### `subgrid`
+#### `subgrid:`
 
   Este display es para heredar la configuración del grid padre
   (cuando se esten anidando los grids)
@@ -172,7 +174,7 @@ Tambien filas y columnas a la vez:
     display: subgrid; // No disponible aun
   ```
 
-#### `inline-grid`
+#### `inline-grid:`
 
   Este display es para mostrar el grid en una sola linea
 
@@ -184,7 +186,7 @@ Tambien filas y columnas a la vez:
   <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
 
-## `Espaciado entre columnas`
+## Espaciado entre columnas
   Para el espaciado entre columnas tenemos las
   siguientes propiedades:
 
@@ -220,11 +222,11 @@ Tambien filas y columnas a la vez:
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
 
-## `Repetidores, unidades de medida y funciones`
+## Repetidores, unidades de medida y funciones
 
   Dentro de las unidades de medida tenemos las siguientes:
 
-#### `Fracciones`
+#### `Fracciones:`
   `(fr)` distribuye el espacio en formas iguales, este
   solo se puede utilizar dentro de un `display:grid`.
 
@@ -234,7 +236,7 @@ Tambien filas y columnas a la vez:
     grid-template: 300px 100px 100px / 1fr 1fr 1fr;
   ```
 
-#### `Auto`
+#### `Auto:`
   `(auto)` distribuye el tamaño respecto al contenido.
 
   > Ejemplo
@@ -243,7 +245,7 @@ Tambien filas y columnas a la vez:
     grid-template: 300px 100px 100px / auto auto auto;
   ```
 
-#### `Funciones`
+#### `Funciones:`
 
 ##### `(repeat)`
   Es una función para usar un mismo valor
@@ -271,6 +273,70 @@ Tambien filas y columnas a la vez:
     grid-template: 300px 100px 100px / minmax(200px,1fr) 1fr 1fr;
   ```
 
+
+  <div align="right">
+    <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+  </div>
+
+## Areas de Contenido
+  Para definir las areas debemos hacer lo
+  siguiente:
+
+  1. Definir nuestro contenedor.
+
+  ![Contenedor](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/layout.png)
+
+  2. Agregar la propiedad:
+     `grid-template-areas` de la siguiente manera:
+
+  ```css
+    .container{
+      display: grid;
+      /* filas / columas = 3/2 */
+      grid-template: repeat(3,1fr) / 200px 1fr;
+      gap: 10px;
+      height: 100vh;
+      grid-template-areas: "header header"
+                "left contenido"
+                "footer footer";
+    }
+  ```
+
+  3. Agregar el markup necesario con clases.
+
+  ```html
+    <div class="container">
+      <div class="item header">header</div>
+      <div class="item left">left</div>
+      <div class="item contenido">contenido</div>
+      <div class="item footer">footer</div>
+    </div>
+  ```
+
+  4. Agregar la propiedad:
+    `grid-area` para definir a que area pertenece:
+  
+  ```css
+  .header{
+    grid-area: header;
+  }
+  .left{
+    grid-area: left;
+  }
+  .contenido{
+    grid-area: contenido;
+  }
+  .footer{
+    grid-area: footer;
+  }
+  ```
+
+  5. Nuestra Area esta correctamente configurada,   para cambiar tamaños solo modificar el
+     `grid-template`
+
+  ```css
+    grid-template: 100px 1fr 150px / 200px 1fr;
+  ```
 
   <div align="right">
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
