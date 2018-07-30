@@ -1,12 +1,11 @@
-/*** espaciado ***/
+/*** funciones ***/
 body {
   font-family: arial;
 }
 .container{
   display: grid;
-  grid-template: 300px 100px 100px / 50% 200px 100px;
-  column-gap: 30px;
-  row-gap: 50px;
+  grid-template: 300px 100px 100px / repeat(3, minmax(200px,1fr));
+  gap: 10px;
 }
 .item{
   background: lightblue;

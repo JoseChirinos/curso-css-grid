@@ -58,7 +58,7 @@
 
 
 <div align="right">
-  <small><a href="#tabla-de-contenido">Contenido 🡡</a></small>
+  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
 
 ## Primeros Pasos
@@ -156,7 +156,7 @@ Tambien filas y columnas a la vez:
 
 
 <div align="right">
-  <small><a href="#tabla-de-contenido">Contenido 🡡</a></small>
+  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
 
 ## `Displays`
@@ -181,7 +181,7 @@ Tambien filas y columnas a la vez:
   ```
 
 <div align="right">
-  <small><a href="#tabla-de-contenido">Contenido 🡡</a></small>
+  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
 
 ## `Espaciado entre columnas`
@@ -217,7 +217,7 @@ Tambien filas y columnas a la vez:
   ```
 
   <div align="right">
-    <small><a href="#tabla-de-contenido">Contenido 🡡</a></small>
+    <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
 
 ## `Repetidores, unidades de medida y funciones`
@@ -226,4 +226,52 @@ Tambien filas y columnas a la vez:
 
 #### `Fracciones`
   `(fr)` distribuye el espacio en formas iguales, este
-  solo se puede utilizar dentro de un `display:grid`
+  solo se puede utilizar dentro de un `display:grid`.
+
+  > Ejemplo
+
+  ```css
+    grid-template: 300px 100px 100px / 1fr 1fr 1fr;
+  ```
+
+#### `Auto`
+  `(auto)` distribuye el tamaño respecto al contenido.
+
+  > Ejemplo
+
+  ```css
+    grid-template: 300px 100px 100px / auto auto auto;
+  ```
+
+#### `Funciones`
+
+##### `(repeat)`
+  Es una función para usar un mismo valor
+   de manera repetida: `repeat(cantidad,valor)`
+
+  > Ejemplo
+
+  ```css
+    grid-template: 300px 100px 100px / repeat(3, 1fr);
+  ```
+
+##### `(minmax)`
+  Es una función para usar agregar un valor minimo y maximo para el tamaño
+  al hacer responsive `minmax(min,max)`
+
+  > Ejemplo A
+
+  ```css
+    grid-template: 300px 100px 100px / repeat(3, minmax(200px,1fr)));
+  ```
+
+   > Ejemplo B
+
+  ```css
+    grid-template: 300px 100px 100px / minmax(200px,1fr) 1fr 1fr;
+  ```
+
+
+  <div align="right">
+    <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+  </div>
