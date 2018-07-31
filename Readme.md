@@ -366,18 +366,25 @@ Tambien filas y columnas a la vez:
     grid-column: 1 / 3; 
     grid-column-end: start/end;
   ```
-
-> Sintaxis definida por columnas (bloques)
-
+> (*)Caso especial, sintaxis definida por cantidad de columnas
   ```css
-    grid-column: 1 / span 2; // 2 bloques de la columna
+    grid-column: 1 / span 2; // 2 columnas
   ```
+
+##### Resultado:
+
+![Contenedor](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/grid-lines.png)
+
 > Sintaxis para ocupar todo el ancho dinamicamente
 
   ```css
-    grid-column: 1 / -1; // ocupa del 1 hasta n
+    grid-column: 2 / -1; // ocupa del 2 hasta n
   ```
-  
+
+##### Resultado:
+
+![Contenedor](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/grid-line-end.png)
+
   <div align="right">
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
