@@ -26,6 +26,9 @@
   - [Definir tamaños de las columnas](#definir-tamaños-de-las-columnas)
 
   - [Definir tamaños de las filas](#definir-tamaños-de-las-filas)
+
+  - [Definir el nombre de las lineas](#definir-el-nombre-de-las-lineas)
+
 ## Introducción
 
 En esta sección explicaremos las conceptos más importantes:
@@ -416,3 +419,31 @@ Tambien filas y columnas a la vez:
 ##### Resultado:
 
 ![Contenedor](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/grid-row.png)
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+</div>
+
+
+## Definir el nombre de las lineas
+  Podemos usar nombres para darle tamaño a las celdas definiendo de que linea a que linea vamos.
+
+  Lo que hacemos es confeccionar manualmente (sin repeat) las filas y columnas y luego entre 
+  corchetes le ponemos el nombre a cada linea que componen el `grid`.
+  
+  `[nombre de la linea]`
+
+> Ejemplo de uso
+
+  ```css
+    grid-template-columns: [start-col] 1fr [line2] 1fr [end-col];
+    grid-template-rows: [start-row] 1fr [line2] 1fr [end-row];
+  ```
+
+##### Resultado:
+
+![Contenedor](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/grid-named-lines.png)
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+</div>
