@@ -31,6 +31,8 @@
 
   - [Manejando el Grid Implicito](#manejando-el-grid-implicito)
 
+  - [Alineación de contenido](#alineación-de-contenido)
+
 ## Introducción
 
 En esta sección explicaremos las conceptos más importantes:
@@ -472,6 +474,55 @@ Tambien filas y columnas a la vez:
     grid-auto-flow: row; /*establece el manejo de los implicit grid*/
     grid-auto-rows: 50px 100px; /*valores al igual que grid-template-rows*/
   ```
+
+  <div align="right">
+    <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+  </div>
+
+## Alineación de contenido
+
+  La alineación se realiza de la siguiente manera:
+
+#### justify-items (Horizontal)
+
+
+```css
+justify-items: value;
+```
+
+> VALUES:
+
+`start` : contenido hacia la izquierda
+
+`end` : contenido hacia la derecha
+
+`center` : contenido al medio
+
+`stretch` : estira el contenido al espacio 
+que nos de el grid
+
+#### align-items (Vertical)
+
+```css
+align-items: value;
+```
+
+> VALUES:
+
+`start` : contenido hacia arriba
+
+`end` : contenido hacia abajo
+
+`center` : contenido al medio
+
+`stretch` : estira el contenido al espacio 
+que nos de el grid
+
+#### Alineación Individual
+
+  `justify-self` : Alineación Horizontal
+
+  `align-self` : Alineación Vertical
 
   <div align="right">
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
