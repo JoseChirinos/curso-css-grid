@@ -29,6 +29,8 @@
 
   - [Definir el nombre de las lineas](#definir-el-nombre-de-las-lineas)
 
+  - [Manejando el Grid Implicito](#manejando-el-grid-implicito)
+
 ## Introducción
 
 En esta sección explicaremos las conceptos más importantes:
@@ -136,7 +138,7 @@ Para definir las columnas se realiza de la siguiente manera:
   .container{
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 300px 300px; //linea agregada
+    grid-template-rows: 300px 300px; /*linea agregada*/
   }
 ```
 
@@ -182,7 +184,7 @@ Tambien filas y columnas a la vez:
   (cuando se esten anidando los grids)
 
   ```css
-    display: subgrid; // No disponible aun
+    display: subgrid; /*No disponible aun*/
   ```
 
 #### `inline-grid:`
@@ -190,7 +192,7 @@ Tambien filas y columnas a la vez:
   Este display es para mostrar el grid en una sola linea
 
   ```css
-    display: inline-grid; // No disponible aun
+    display: inline-grid; /*No disponible aun*/
   ```
 
 <div align="right">
@@ -202,15 +204,15 @@ Tambien filas y columnas a la vez:
   siguientes propiedades:
 
   ```css
-    grid-column-gap: value; // Espaciado entre columnas
+    grid-column-gap: value; /*Espaciado entre columnas*/
   ```
 
   ```css
-    grid-row-gap: value; // Espaciado entre filas
+    grid-row-gap: value; /*Espaciado entre filas*/
   ```
 
   ```css
-    grid-gap: rows columns; // Espaciado filas y columnas
+    grid-gap: rows columns; /*Espaciado filas y columnas*/
   ```
 
 #### `(*)Importante Actualización Chrome 66`
@@ -218,15 +220,15 @@ Tambien filas y columnas a la vez:
   Se retira la inicial `grid-`
   
   ```css
-    column-gap: value; // Espaciado entre columnas
+    column-gap: value; /*Espaciado entre columnas*/
   ```
 
   ```css
-    row-gap: value; // Espaciado entre filas
+    row-gap: value; /*Espaciado entre filas*/
   ```
 
   ```css
-    gap: rows columns; // Espaciado filas y columnas
+    gap: rows columns; /*Espaciado filas y columnas*/
   ```
 
   <div align="right">
@@ -361,8 +363,8 @@ Tambien filas y columnas a la vez:
 > Sintaxis sin resumir grid-lines
 
   ```css
-    grid-column-start: 1; // linea 1
-    grid-column-end: 3; // linea 3
+    grid-column-start: 1; /*linea 1*/
+    grid-column-end: 3; /*linea 3*/
   ```
 
 > Sintaxis resumida por grid-lines
@@ -373,7 +375,7 @@ Tambien filas y columnas a la vez:
   ```
 > (*)Caso especial, sintaxis definida por cantidad de columnas
   ```css
-    grid-column: 1 / span 2; // 2 columnas
+    grid-column: 1 / span 2; /*2 columnas*/
   ```
 
 ##### Resultado:
@@ -383,7 +385,7 @@ Tambien filas y columnas a la vez:
 > Sintaxis para ocupar todo el ancho dinamicamente
 
   ```css
-    grid-column: 2 / -1; // ocupa del 2 hasta n
+    grid-column: 2 / -1; /*ocupa del 2 hasta n*/
   ```
 
 ##### Resultado:
@@ -401,8 +403,8 @@ Tambien filas y columnas a la vez:
 > Sintaxis sin resumir grid-lines
 
   ```css
-    grid-row-start: 1; // linea 1
-    grid-row-end: 3; // linea 3
+    grid-row-start: 1; /*linea 1*/
+    grid-row-end: 3; /*linea 3*/
   ```
 
 > Sintaxis resumida por grid-lines
@@ -413,7 +415,7 @@ Tambien filas y columnas a la vez:
   ```
 > (*)Caso especial, sintaxis definida por cantidad de filas
   ```css
-    grid-row: 1 / span 2; // 2 filas
+    grid-row: 1 / span 2; /*2 filas*/
   ```
 
 ##### Resultado:
@@ -447,3 +449,30 @@ Tambien filas y columnas a la vez:
 <div align="right">
   <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
 </div>
+
+
+## Manejando el Grid Implicito
+
+  El grid implicito es cuando tenemos filas o columnas
+  que no definimos pero son parte de nuestro grid.
+
+  Para manejar las `columnas`, lo podemos
+  realizar de la siguiente manera:
+
+  ```css
+    grid-auto-flow: column; /*establece el manejo de los implicit grid*/
+    grid-auto-columns: 200px; /*valores al igual que grid-template-columns*/
+  ```
+  ##### (*) En firefox el `grid-auto-columns:valor` solo recibe un valor
+
+  Para manejar las `filas`, lo podemos
+  realizar de la siguiente manera:
+
+  ```css
+    grid-auto-flow: row; /*establece el manejo de los implicit grid*/
+    grid-auto-rows: 50px 100px; /*valores al igual que grid-template-rows*/
+  ```
+
+  <div align="right">
+    <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+  </div>
