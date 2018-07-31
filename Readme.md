@@ -21,9 +21,11 @@
   - [Espaciado entre columnas](#espaciado-entre-columnas)
   - [Repetidores, unidades de medida y funciones](#Repetidores,-unidades-de-medida-y-funciones)
 
-  - [Areas de Contenido](#areas-de-contenido)
+  - [Areas de contenido](#areas-de-contenido)
 
-  - [Definir Tamaños de las columnas](#definir-tamaños-de-las-columnas)
+  - [Definir tamaños de las columnas](#definir-tamaños-de-las-columnas)
+
+  - [Definir tamaños de las filas](#definir-tamaños-de-las-filas)
 ## Introducción
 
 En esta sección explicaremos las conceptos más importantes:
@@ -284,7 +286,7 @@ Tambien filas y columnas a la vez:
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
 
-## Areas de Contenido
+## Areas de contenido
   Para definir las areas debemos hacer lo
   siguiente:
 
@@ -348,7 +350,7 @@ Tambien filas y columnas a la vez:
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
 
-  ## Definir Tamaños de las columnas
+## Definir tamaños de las columnas
 
   Los tamaños de columnas se definen dependiendo
   el numero de `Grid Lines`
@@ -364,7 +366,7 @@ Tambien filas y columnas a la vez:
 
   ```css
     grid-column: 1 / 3; 
-    grid-column-end: start/end;
+    grid-column: start/end;
   ```
 > (*)Caso especial, sintaxis definida por cantidad de columnas
   ```css
@@ -388,3 +390,29 @@ Tambien filas y columnas a la vez:
   <div align="right">
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
+
+## Definir tamaños de las filas
+  Los tamaños de filas se definen dependiendo
+  el numero de `Grid Lines`
+
+> Sintaxis sin resumir grid-lines
+
+  ```css
+    grid-row-start: 1; // linea 1
+    grid-row-end: 3; // linea 3
+  ```
+
+> Sintaxis resumida por grid-lines
+
+  ```css
+    grid-row: 1 / 3; 
+    grid-row: start/end;
+  ```
+> (*)Caso especial, sintaxis definida por cantidad de filas
+  ```css
+    grid-row: 1 / span 2; // 2 filas
+  ```
+
+##### Resultado:
+
+![Contenedor](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/grid-row.png)
