@@ -442,7 +442,7 @@ Tambien filas y columnas a la vez:
 
 ##### Resultado:
 
-![Contenedor](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/grid-named-lines.png)
+![Contenedor](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/grid-named-lines-official.png)
 
 <div align="right">
   <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
