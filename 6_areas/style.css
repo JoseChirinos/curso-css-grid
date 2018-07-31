@@ -8,7 +8,7 @@ body {
   gap: 10px;
   height: 100vh;
   grid-template-areas: "header header"
-             "left contenido"
+             "left content"
              "footer footer";
 }
 .item{
@@ -32,8 +32,8 @@ body {
 .left{
   grid-area: left;
 }
-.contenido{
-  grid-area: contenido;
+.content{
+  grid-area: content;
 }
 .footer{
   grid-area: footer;

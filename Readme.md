@@ -13,11 +13,17 @@
 
 ## Tabla de Contenido
   - [Introducción](#introducción)
+
   - [Primeros Pasos](#primeros-pasos)
+
   - [Displays](#displays)
+  
   - [Espaciado entre columnas](#espaciado-entre-columnas)
   - [Repetidores, unidades de medida y funciones](#Repetidores,-unidades-de-medida-y-funciones)
+
   - [Areas de Contenido](#areas-de-contenido)
+
+  - [Definir Tamaños de las columnas](#definir-tamaños-de-las-columnas)
 ## Introducción
 
 En esta sección explicaremos las conceptos más importantes:
@@ -297,7 +303,7 @@ Tambien filas y columnas a la vez:
       gap: 10px;
       height: 100vh;
       grid-template-areas: "header header"
-                "left contenido"
+                "left content"
                 "footer footer";
     }
   ```
@@ -308,7 +314,7 @@ Tambien filas y columnas a la vez:
     <div class="container">
       <div class="item header">header</div>
       <div class="item left">left</div>
-      <div class="item contenido">contenido</div>
+      <div class="item content">contenido</div>
       <div class="item footer">footer</div>
     </div>
   ```
@@ -323,8 +329,8 @@ Tambien filas y columnas a la vez:
   .left{
     grid-area: left;
   }
-  .contenido{
-    grid-area: contenido;
+  .content{
+    grid-area: content;
   }
   .footer{
     grid-area: footer;
@@ -338,6 +344,40 @@ Tambien filas y columnas a la vez:
     grid-template: 100px 1fr 150px / 200px 1fr;
   ```
 
+  <div align="right">
+    <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+  </div>
+
+  ## Definir Tamaños de las columnas
+
+  Los tamaños de columnas se definen dependiendo
+  el numero de `Grid Lines`
+
+> Sintaxis sin resumir grid-lines
+
+  ```css
+    grid-column-start: 1; // linea 1
+    grid-column-end: 3; // linea 3
+  ```
+
+> Sintaxis resumida por grid-lines
+
+  ```css
+    grid-column: 1 / 3; 
+    grid-column-end: start/end;
+  ```
+
+> Sintaxis definida por columnas (bloques)
+
+  ```css
+    grid-column: 1 / span 2; // 2 bloques de la columna
+  ```
+> Sintaxis para ocupar todo el ancho dinamicamente
+
+  ```css
+    grid-column: 1 / -1; // ocupa del 1 hasta n
+  ```
+  
   <div align="right">
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
