@@ -1,0 +1,23 @@
+/*** align-content ***/
+body {
+  font-family: arial;
+}
+.container{
+  display: grid;
+  gap:5px;
+  height: 100vh;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(4, 100px);
+  justify-content:space-between;
+  align-content: space-between;
+}
+.item{
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.item:nth-of-type(5){
+  /* align-self: start;
+  justify-self: start; */
+}

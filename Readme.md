@@ -31,6 +31,8 @@
 
   - [Manejando el Grid Implicito](#manejando-el-grid-implicito)
 
+  - [Alineación de items](#alineación-de-items)
+
   - [Alineación de contenido](#alineación-de-contenido)
 
 ## Introducción
@@ -479,7 +481,7 @@ Tambien filas y columnas a la vez:
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
 
-## Alineación de contenido
+## Alineación de items
 
   La alineación se realiza de la siguiente manera:
 
@@ -523,6 +525,62 @@ que nos de el grid
   `justify-self` : Alineación Horizontal
 
   `align-self` : Alineación Vertical
+
+  <div align="right">
+    <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+  </div>
+
+## Alineación de contenido
+
+  La alineación se realiza de la siguiente manera:
+
+#### justify-content (Alineado Horizontal)
+
+
+```css
+justify-content: value;
+```
+
+> VALUES:
+
+`start` : contenido hacia la izquierda
+
+`end` : contenido hacia la derecha
+
+`center` : contenido al medio
+
+`stretch` : estira el contenido al espacio 
+que nos de el grid
+
+`space-around` : Espacios alrededor de cada columna
+
+`space-between` : Espaciado interno
+
+`space-evenly` : distribución homogenea del espacio
+
+#### justify-items (Alineado Vertical)
+
+```css
+align-items: value;
+```
+
+> VALUES:
+
+`start` : contenido hacia la arriba
+
+`end` : contenido hacia la abajo
+
+`center` : contenido al medio
+
+`stretch` : estira el contenido al espacio 
+que nos de el grid
+
+`space-around` : Espacios alrededor de cada fila
+
+`space-between` : Espaciado interno
+
+`space-evenly` : distribución homogenea del espacio
+
 
   <div align="right">
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
