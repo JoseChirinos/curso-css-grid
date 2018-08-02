@@ -25,6 +25,8 @@
 
   - [Alineación de contenido](#alineación-de-contenido)
 
+  - [Practica Jugando](#practica-jugando)
+
 ## Introducción
 
 En esta sección explicaremos las conceptos más importantes:
@@ -575,6 +577,19 @@ que nos de el grid
   <div align="right">
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
+
+## Practica Jugando
+
+Practica tus habilidades de CSS Grid Layout con
+este juego [Grig Garden](http://cssgridgarden.com/#es).
+
+![Grid Garden](https://raw.githubusercontent.com/JoseChirinos/curso-css-grid/master/static/grid-garden.PNG)
+
+No dejes de aprender...!!!
+
+<div align="right">
+  <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
+</div>
 
 ## Great!!
 > Resumido por josechirinos 2018
