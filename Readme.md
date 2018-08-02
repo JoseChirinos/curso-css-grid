@@ -1,15 +1,5 @@
-# Curso CSS Grid Layout 
+# Curso CSS Grid Layout
 
-### Para ejecutar el proyecto en modo dev, instalar la siguiente dependencia:
-
-1. Browser-Sync para cambios en tiempo real
-```sh
-    npm install -g browser-sync
-```
-2. Ejecutar el proyecto modo desarrollo
-```sh
-    npm start
-```
 
 ## Tabla de Contenido
   - [Introducción](#introducción)
@@ -585,3 +575,6 @@ que nos de el grid
   <div align="right">
     <small><a href="#tabla-de-contenido">🡡 volver al inicio</a></small>
   </div>
+
+## Great!!
+> Resumido por josechirinos 2018
